@@ -12,6 +12,7 @@ namespace dstec.Controllers
         [HttpGet]
         public string calculaJuros(double valorInicial,int tempo)
         {
+            //ainda não está pronto, o cálculo está incorreto
             double taxa = 0.01;
             double temp = valorInicial * (1 + taxa);
             double valorFinal = (Math.Pow(temp, tempo))/100;
